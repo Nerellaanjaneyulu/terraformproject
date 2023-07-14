@@ -44,7 +44,7 @@ EOF
   }
 }
 
-resource "aws_instnace" "three" {
+resource "aws_instance" "three" {
   ami                    = "ami-04823729c75214919"
   instance_type          = "t2.micro"
   key_name               = "terraform"
