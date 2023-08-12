@@ -92,7 +92,7 @@ resource "aws_security_group" "five" {
 
 
 resource "aws_s3_bucket" "six" {
-  bucket = "anshudevops2233"
+  bucket = "anshudev1122"
 }
 
 resource "aws_iam_user" "seven" {
