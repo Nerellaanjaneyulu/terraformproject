@@ -25,7 +25,7 @@ EOF
 }
 
 resource "aws_instance" "two" {
-  ami                    = "ami-04823729c75214919"
+  ami                    = "ami-021f7978361c18b01"
   instance_type          = "t2.micro"
   key_name               = "terraform"
   vpc_security_group_ids = [aws_security_group.five.id]
@@ -45,7 +45,7 @@ EOF
 }
 
 resource "aws_instance" "three" {
-  ami                    = "ami-04823729c75214919"
+  ami                    = "ami-021f7978361c18b01"
   instance_type          = "t2.micro"
   key_name               = "terraform"
   vpc_security_group_ids = [aws_security_group.five.id]
@@ -56,7 +56,7 @@ resource "aws_instance" "three" {
 }
 
 resource "aws_instance" "four" {
-  ami                    = "ami-04823729c75214919"
+  ami                    = "ami-021f7978361c18b01"
   instance_type          = "t2.micro"
   key_name               = "terraform"
   vpc_security_group_ids = [aws_security_group.five.id]
