@@ -1,13 +1,13 @@
 provider "aws" {
   region     = "us-east-1"
-  access_key = "AKIASH36EJFW2TFEEYTG"
-  secret_key = "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"
+  access_key = "AKIAYLTDV5TZFMFQBVNS"
+  secret_key = "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"
 }
 
 resource "aws_instance" "one" {
-  ami                    = "ami-021f7978361c18b01"
+  ami                    = "ami-0f409bae3775dc8e5"
   instance_type          = "t2.micro"
-  key_name               = "terraform"
+  key_name               = "docker project"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone      = "us-east-1a"
   user_data              = <<EOF
@@ -25,9 +25,9 @@ EOF
 }
 
 resource "aws_instance" "two" {
-  ami                    = "ami-021f7978361c18b01"
+  ami                    = "ami-0f409bae3775dc8e5"
   instance_type          = "t2.micro"
-  key_name               = "terraform"
+  key_name               = "docker project"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone      = "us-east-1b"
   user_data              = <<EOF
@@ -45,9 +45,9 @@ EOF
 }
 
 resource "aws_instance" "three" {
-  ami                    = "ami-021f7978361c18b01"
+  ami                    = "ami-0f409bae3775dc8e5"
   instance_type          = "t2.micro"
-  key_name               = "terraform"
+  key_name               = "docker project"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone      = "us-east-1a"
   tags = {
@@ -56,9 +56,9 @@ resource "aws_instance" "three" {
 }
 
 resource "aws_instance" "four" {
-  ami                    = "ami-021f7978361c18b01"
+  ami                    = "ami-0f409bae3775dc8e5"
   instance_type          = "t2.micro"
-  key_name               = "terraform"
+  key_name               = "docker project"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone      = "us-east-1b"
   tags = {
